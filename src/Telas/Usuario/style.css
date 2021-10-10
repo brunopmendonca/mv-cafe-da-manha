@@ -1,0 +1,170 @@
+
+.tela-inteira{
+    background: url('../../imagens/login.jpeg') no-repeat bottom center scroll;
+    background-size: cover;
+}
+.menu{
+    display: flex;
+    justify-content: space-between;
+    color: #ffffff;
+    background-color:rgba(8, 8, 8, 0.4);
+    padding: 20px;
+}
+
+.menu img{
+    height: 50px;
+}
+
+.menu span{
+    background-color: yellow;
+    /* margin-right: 30px; */
+    padding: 10px;
+    max-width: 20%;
+    max-height: 20px;
+    border-radius: 4px;
+    border: solid 2px black;
+	color:black
+}
+
+.tela-inteira h1 {
+    font-size: 50px;
+   color: black;
+   
+}
+
+.telaUsuario{
+    display: flex;
+    background-size: cover ;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    height: 100vh;
+    width: 100; 
+}
+
+.pesquisa{
+    
+    display: flex;
+	background-color:rgba(8, 8, 8, 0.4);
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30%;
+    height: 20%;
+    padding: 100px 50px 100px 50px;
+    border-radius: 10px;
+    border: solid 2px;
+}
+
+.pesquisa h2{
+    color:black;
+    font-size: 30px;
+}
+
+.pesquisa input{
+    margin: 0 auto;
+    border: solid 2px;
+    padding: 5px;
+    width: 48% ;
+}
+
+.pesquisa button{
+    background-color:yellow;
+    margin: 0 auto;
+    margin-top: 20px;
+    padding: 10px;
+    height: 75px;
+    width: 50%;
+    color: #ffffff;
+	border: solid 2px black;
+}
+
+.tela-cards{
+
+    background-color: yellow; 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    /* padding: 10px; */
+}
+
+/* .grupo-cards{
+    display: flex;
+    width: 20%;
+    
+} */
+
+.card-heroi{
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 200px;
+    height: auto;
+    padding: 10px 5px 20px 5px;
+    margin: 20px;
+    margin-top: 100px;
+    text-align: center;
+    border: solid 2px;
+   
+}
+
+.card-heroi img{
+   
+    width: 100%;
+    height: auto;
+}
+
+.nome-heroi{
+    font-size: 20px;
+}
+
+.card-heroi button{
+   background-color:rgba(0, 0, 0, 0.932);
+   padding: 10px;
+   
+   color: #ffffff;
+}
+
+.card-ampliado{
+    background-color:black;
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    height: 400px;
+    padding: 10px 5px 20px 5px;
+    margin: 20px;
+    margin-top: 100px;
+    text-align: center;
+    border: solid 2px;
+   
+}
+
+@media(max-width:600px){
+
+    .pesquisa{
+    
+        display: flex;
+        background-color:#ffffff;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 50%;
+        height: 20%;
+        border-radius: 10px;
+        border: solid 2px;
+    }
+
+    .pesquisa button{
+        background-color:black;
+        margin: 0 auto;
+        margin-top: 20px;
+        padding: 5px;
+        min-width: 150px;
+        color: #ffffff;
+    }
+
+    .pesquisa input{
+      
+        min-width: 150px;
+    }
+}
