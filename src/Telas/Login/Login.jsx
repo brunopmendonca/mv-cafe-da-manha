@@ -22,36 +22,10 @@ const Login = () => {
         setSenha(e.target.value)
     }
 
-
-    async function irParaPerfil() {
-
-        let response = await fetch("http://mv-api-java.herokuapp.com/colaborador", {
-            method: 'POST',
-            headers: {
-                'Access-Control-Allow-Origin': '*', 
-				'content-type': 'aplication/json'
-            },
-            body: JSON.stringify({
-                name: name,
-                cpf: senha
-
-            })
-
-        })
-
-        let json = await response.json()
-		console.log(json)
-
-        if (json == null) {
-            window.alert("nao possui cadastro")
-        }
-        else {
-            historia.push(`/Usuario`)
-        }
-
-    }
-
-
+	function entrar()
+	{
+		historia.push(`/Usuario`)
+	}
 
     return (
 
@@ -64,9 +38,9 @@ const Login = () => {
                 <input onInput={(e) => { campoNome(e) }} placeholder="Usuario" />
                 <input onInput={(e) => { campoSenha(e) }} placeholder="Senha" />
                 <button onClick={() => {
-                    irParaPerfil()
+                    entrar()
                 }}> Entrar </button>
-                <Link className="botao-cadastro" to="/cadastro"> Cadastrar</Link>
+                <Link className="botao-cadastro" to="/Usuario"> Cadastrar</Link>
             </div>
 
 
